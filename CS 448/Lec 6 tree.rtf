@@ -1,0 +1,65 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Bold;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+{\info
+{\author Darryl}}\margl1440\margr1440\vieww14260\viewh18720\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 SOFTWARE VERIFICATION\
+\uc0\u9474 \
+\uc0\u9500 \u9472 \u9472 \u9472  WHY? \u8594  Complexity causes catastrophic failures\
+\uc0\u9474             Testing cannot prove absence of bugs\
+\uc0\u9474 \
+\uc0\u9492 \u9472 \u9472 \u9472  WHAT? \u8594  
+\f1\b FORMAL METHODS
+\f0\b0 \
+             \uc0\u9474 \
+             \uc0\u9500 \u9472 \u9472 \u9472  SPECIFICATION (What should the system do?)\
+             \uc0\u9474     \u9474 \
+             \uc0\u9474     \u9500 \u9472 \u9472 \u9472  State-based (Z, VDM, Larch)\
+             \uc0\u9474     \u9474     \u9492 \u9472 \u9472 \u9472  For: Sequential systems, functional correctness\
+             \uc0\u9474     \u9474 \
+             \uc0\u9474     \u9492 \u9472 \u9472 \u9472  Concurrent/Reactive (CSP, Temporal Logic, Automata)\
+             \uc0\u9474          \u9492 \u9472 \u9472 \u9472  For: Real-time, concurrent, embedded systems\
+             \uc0\u9474               \u9474 \
+             \uc0\u9474               \u9500 \u9472 \u9472 \u9472  TEMPORAL LOGIC (expressing time-dependent properties)\
+             \uc0\u9474               \u9474     \u9474 \
+             \uc0\u9474               \u9474     \u9492 \u9472 \u9472 \u9472  
+\f1\b CTL
+\f0\b0  (Computation Tree Logic)\
+             \uc0\u9474               \u9474          \u9500 \u9472 \u9472 \u9472  Syntax: A/E (path quantifiers) + X/F/G/U (temporal operators)\
+             \uc0\u9474               \u9474          \u9500 \u9472 \u9472 \u9472  Semantics: Truth on Kripke structures\
+             \uc0\u9474               \u9474          \u9492 \u9472 \u9472 \u9472  Properties: Safety (AG), Liveness (AF/EF), Precedence (AU/EU)\
+             \uc0\u9474               \u9474 \
+             \uc0\u9474               \u9492 \u9472 \u9472 \u9472  AUTOMATA MODELS\
+             \uc0\u9474                    \u9474 \
+             \uc0\u9474                    \u9492 \u9472 \u9472 \u9472  LINEAR HYBRID AUTOMATA (LHA)\
+             \uc0\u9474                         \u9500 \u9472 \u9472 \u9472  Combines: Discrete transitions + Continuous dynamics\
+             \uc0\u9474                         \u9500 \u9472 \u9472 \u9472  Components: Locations, guards, invariants, differential equations\
+             \uc0\u9474                         \u9492 \u9472 \u9472 \u9472  Used for: Real-time systems, CPS, embedded controllers\
+             \uc0\u9474 \
+             \uc0\u9492 \u9472 \u9472 \u9472  VERIFICATION (Does the system satisfy the specification?)\
+                  \uc0\u9474 \
+                  \uc0\u9500 \u9472 \u9472 \u9472  MODEL CHECKING\
+                  \uc0\u9474     \u9474 \
+                  \uc0\u9474     \u9500 \u9472 \u9472 \u9472  Approach: Exhaustive exploration of finite state space\
+                  \uc0\u9474     \u9500 \u9472 \u9472 \u9472  Strengths: Fully automatic, provides counterexamples\
+                  \uc0\u9474     \u9500 \u9472 \u9472 \u9472  Limitations: State explosion, finite models only\
+                  \uc0\u9474     \u9474 \
+                  \uc0\u9474     \u9492 \u9472 \u9472 \u9472  WORKFLOW:\
+                  \uc0\u9474          1. Model System \u8594  Kripke Structure (from LHA)\
+                  \uc0\u9474          2. Specify Property \u8594  CTL Formula\
+                  \uc0\u9474          3. Verify: K \u8872  \u966  ?\
+                  \uc0\u9474          \u9474 \
+                  \uc0\u9474          \u9492 \u9472 \u9472 \u9472  TECHNIQUES:\
+                  \uc0\u9474               \u9500 \u9472 \u9472 \u9472  Reachability Analysis (compute reachable states)\
+                  \uc0\u9474               \u9500 \u9472 \u9472 \u9472  Abstraction (over-approximate state space)\
+                  \uc0\u9474               \u9492 \u9472 \u9472 \u9472  Fixed-point algorithms (pred\u8707 , pred\u8704 )\
+                  \uc0\u9474 \
+                  \uc0\u9492 \u9472 \u9472 \u9472  THEOREM PROVING\
+                       \uc0\u9474 \
+                       \uc0\u9500 \u9472 \u9472 \u9472  Approach: Mathematical proof with human guidance\
+                       \uc0\u9500 \u9472 \u9472 \u9472  Strengths: Handles infinite states, deep correctness\
+                       \uc0\u9492 \u9472 \u9472 \u9472  Limitations: Expertise-heavy, not push-button\
+}
